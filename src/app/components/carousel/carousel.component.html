@@ -1,0 +1,26 @@
+<section class="bg-gray">
+  <div class="container"><button type="button" style="position: absolute;z-index: 9;top: 120px;" class="btn btn-light-green">Sửa carousel</button></div>
+  
+  <mdb-carousel [isControls]="true" class="carousel slide carousel-slide " [animation]="'slide'">
+    <mdb-carousel-item *ngFor="let slide of slides">
+      <div class="view w-100">
+        <img class="d-block w-100" src="{{slide.bannerUrl}}" alt="">
+        <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+      </div>
+      <div class="carousel-caption container ">
+        <div class="animated fadeInDown delay-1s">
+          <div class="col">
+            <div class="animated fadeIn delay-2s">
+              <h3 class="h3-responsive">1530-2 Liberty Ave 4</h3>
+              <div class="line-break"></div>
+              <p>This is a 3 bedroom, 2 bathroom multi family home. It is located at 1530 Liberty Ave Hillside.</p>
+              <div class="price">
+                <span>$309.00<small>/day</small></span>
+                <a href="#" class="btn btn-primary waves-effect waves-light">Xem Ngay</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
+</section>

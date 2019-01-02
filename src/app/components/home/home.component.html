@@ -1,0 +1,247 @@
+<app-carousel></app-carousel>
+<main>
+  <section class="bg-gray">
+    <div class="container">
+      <div class="col position-margin-top search-form-wrap bg-white container-shadow">
+        <app-searchbox></app-searchbox>
+      </div>
+    <!-- Default form grid -->
+    </div>
+  </section>
+  <section class="list-prod bg-gray pd-top pd-bottom">
+    <div class="container">
+
+      <div class="col"><h2 style="display: flex;justify-content: space-between;">
+        Sản Phẩm Mới
+        <button mdbBtn type="button" color="light-green" mdbWavesEffect>Thêm sản phẩm</button></h2>
+        <div class="line-break"></div>
+      </div>
+      <div class="card-group pd-top">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 prod-item" *ngFor="let number of tmpProdNumber">
+          <!-- Card -->
+          <div class="card">
+            <!--Card image-->
+            <div class="view zoom overlay">
+              <div class="img_overlay">
+                <div class="text-center">
+                <div>
+                <button class="btn" (click)="openConfirmationDialog()">Xem nhanh</button>
+                <button class="btn" routerLink="prod">Chi tiết</button>
+              </div><div>
+                <button class="btn btn-light-green" routerLink="prod">Sửa</button>
+                <button class="btn btn-light-green" routerLink="prod">Xóa</button>
+                </div>
+              </div>
+              </div>
+              <img class="card-img-top" src="assets/images/prod-{{number}}.png" alt="Card image cap">
+              <a href="#!">
+                  <div class="mask waves-effect waves-light"></div>
+                </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">Building: 123 on the Park</h4>
+              <strong>$1199.00/mon</strong>
+              <p class="desc">
+                <span>1200 sq fr</span>
+                <span>.</span>
+                <span>4 bedrooms</span>
+                <span>.</span>
+                <span>2 bathrooms</span>
+              </p>
+              <!--Text-->
+              <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+      <div class="text-center">
+        <button mdbBtn type="button" color="primary" mdbWavesEffect>Xem tất cả</button>
+<!-- <button mdbBtn type="button" color="primary" mdbWavesEffect>Thêm sản phẩm</button> -->
+
+      </div>
+    </div>
+  </section>
+  <!-- <section> -->
+  <!-- Jumbotron -->
+  <div class="jumbotron mdb-color white-text ">
+    <div class="container">
+      <div class="pd-bottom">
+        <div>
+          <!-- Title -->
+          <h2 class="card-title h2">Our Advantages</h2>
+          <!-- Subtitle -->
+          <div class="line-break"></div>
+        </div>
+      </div>
+      <!-- Grid row -->
+      <div class="row  justify-content-center">
+        <!-- Grid column -->
+        <div class="col-xl-3 col-md-6">
+          <div class="fa-lg fa-2x icon-circle">
+            <i class="fa fa-camera-retro"></i>
+          </div>
+          <h4>Various Location</h4>
+          <h7 class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam rem aperiam.</h7>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="fa-lg fa-2x icon-circle">
+            <i class="fa fa-camera-retro"></i>
+          </div>
+          <h4>Various Location</h4>
+          <h7 class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam rem aperiam.</h7>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="fa-lg fa-2x icon-circle">
+            <i class="fa fa-camera-retro"></i>
+          </div>
+          <h4>Various Location</h4>
+          <h7 class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam rem aperiam.</h7>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="fa-lg fa-2x icon-circle">
+            <i class="fa fa-camera-retro"></i>
+          </div>
+          <h4>Various Location</h4>
+          <h7 class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aliquid dolorem ea distinctio exercitationem delectus qui, quas eum architecto, amet quasi accusantium, fugit consequatur ducimus obcaecati numquam molestias hic itaque accusantium doloremque laudantium, totam rem aperiam.</h7>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </div>
+  <!-- Jumbotron -->
+  <!-- </section> -->
+  <section class="container" id="realEstate">
+    <div class="section-heading text-center">
+      <h2>
+              Latest Real Estate
+          </h2>
+      <h6 class="pd-bottom">Find the lastest homes for sale, property & red estate marker data</h6>
+      <br>
+    </div>
+    <div class="card-group">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 item">
+        <!-- Card -->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top rounded-circle" src="assets/images/mt-0409-agent-img1.jpg" alt="Card image cap">
+            <a href="#!">
+                  <div class="mask   waves-effect waves-light"></div>
+                </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">BERNARD SHOW</h4>
+            <i class="sub-title">Real Estate Group</i>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <div class="mb-5 flex-center">
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fa fa-twitter mr-md-5 mr-3"> </i>
+              </a>
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fa fa-facebook mr-md-5 mr-3"> </i>
+                   </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fa fa-google-plus mr-md-5 mr-3"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fa fa-linkedin"> </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 item">
+        <!-- Card -->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top rounded-circle" src="assets/images/mt-0409-agent-img2.jpg" alt="Card image cap">
+            <a href="#!">
+                  <div class="mask waves-effect waves-light"></div>
+                </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">MAX HARRIS</h4>
+            <i class="sub-title">Real Estate Group</i>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <div class="mb-5 flex-center">
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fa fa-twitter mr-md-5 mr-3"> </i>
+              </a>
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fa fa-facebook mr-md-5 mr-3"> </i>
+                   </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fa fa-google-plus mr-md-5 mr-3"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fa fa-linkedin"> </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 item">
+        <!-- Card -->
+        <div class="card">
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top rounded-circle" src="assets/images/mt-0409-agent-img3.jpg" alt="Card image cap">
+            <a href="#!">
+                  <div class="mask   waves-effect waves-light"></div>
+                </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <h4 class="card-title">SIDNEY GARCIA</h4>
+            <i class="sub-title">Real Estate Group</i>
+            <!--Text-->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <div class="mb-5 flex-center">
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fa fa-twitter mr-md-5 mr-3"> </i>
+              </a>
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fa fa-facebook mr-md-5 mr-3"> </i>
+                   </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fa fa-google-plus mr-md-5 mr-3"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fa fa-linkedin"> </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- Footer -->
+

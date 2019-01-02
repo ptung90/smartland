@@ -1,0 +1,19 @@
+<div id="bannerman-wrapper">
+  
+  <div class="row" *ngFor="let banner of banners">
+    <div class="col-lg-3 col-sm-6 col-xs-12">
+      <img src="{{banner.bannerUrl}}" class="responsive" style="width: 100%"/>
+    </div>
+    <div class="col-lg-1 col-sm-2 col-xs-3">
+      <div class="material-switch pull-center align-middle" style="position: relative; top: 40%; text-align: center;">
+        <input  [checked]="banner.published" (change)="toggleBannerStatus(banner, $event)" id="banner-{{banner.id}}" name="banner-{{banner.id}}" type="checkbox"/>
+        <label for="banner-{{banner.id}}" class="label-default"></label>
+     </div>
+    </div>
+  </div>
+
+  <div class="form-row pull-center">
+    <input #file type="file" multiple (change)="upload(file.files)" />
+    <br/>
+  </div>
+</div>

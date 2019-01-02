@@ -1,0 +1,165 @@
+<app-carousel></app-carousel>
+<main class="">
+  <section class="">
+    <div class="container">
+      <div class="section-heading text-center pd-top pd-bottom">
+        <h2 class="card-title h2">The Presidio Residences</h2>
+        <div class="line-break"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <mdb-carousel [animation]="'slide'">
+            <mdb-carousel-item>
+              <img class="d-block w-100" src="https://livedemo00.template-help.com/wt_prod-1143/images/product-single-1.jpg" alt="First slide">
+  </mdb-carousel-item>
+              <mdb-carousel-item>
+                <img class="d-block w-100" src="https://livedemo00.template-help.com/wt_prod-1143/images/product-single-2.jpg" alt="Second slide">
+  </mdb-carousel-item>
+                <mdb-carousel-item>
+                  <img class="d-block w-100" src="https://livedemo00.template-help.com/wt_prod-1143/images/product-single-3.jpg" alt="Third slide">
+  </mdb-carousel-item>
+                  <mdb-carousel-item>
+                    <img class="d-block w-100" src="https://livedemo00.template-help.com/wt_prod-1143/images/product-single-4.jpg" alt="Third slide">
+  </mdb-carousel-item>
+                    <mdb-carousel-item>
+                      <img class="d-block w-100" src="https://livedemo00.template-help.com/wt_prod-1143/images/product-single-5.jpg" alt="Third slide">
+  </mdb-carousel-item>
+                      <mdb-carousel-item>
+                        <img class="d-block w-100" src="https://livedemo00.template-help.com/wt_prod-1143/images/product-single-6.jpg" alt="Third slide">
+  </mdb-carousel-item>
+          </mdb-carousel>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <app-searchbox></app-searchbox>
+        </div>
+        <!-- Default form grid -->
+      </div>
+    </div>
+  </section>
+  <section class="pd-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-8">
+          <h4 class="border-bottom pd-top mb-4">Description</h4>
+          <p>405 Canyon Vista Dr Spectacular mountain view, sublime privacy &amp; endless flexibility converge right here on 1 of Mt Washington's favorite streets. Sunrise breakfast vistas, discreet gated entry &amp; the luxury of an open loft office/den plus the 2/2 practicality let you love it just as it is or spend happy veranda hours contemplating expansive Dwell or HGTV dreams. Cars to pamper or creative space high on your list?</p>
+          <p>The enclosed carport is ready and waiting. Longing to build some raised garden beds? The generous Meyer lemon will dress your fresh veggies in style. Contemplating happy gatherings? The indoor ope...n flow welcomes cozy dinners or that long summer feast under the stars. Lovingly cared for, wonderfully sited for all that brings you to Mt Washington, handy to NELA &amp; beyond.</p>
+          <h4 class="pt-3 pb-2" >Property Detail</h4>
+          <div class="">
+            <table class="table table-default">
+              <tbody>
+                <tr>
+                  <td>Area</td>
+                  <td>1200 sq ft</td>
+                </tr>
+                <tr>
+                  <td>Bedrooms</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Bathrooms</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Garages</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Features</td>
+                  <td>Lawn, Sprinkler System, Marble Floors</td>
+                </tr>
+                <tr>
+                  <td>Year Built</td>
+                  <td>1998</td>
+                </tr>
+                <tr>
+                  <td>Lot Size</td>
+                  <td>5.45</td>
+                </tr>
+                <tr>
+                  <td>School District</td>
+                  <td>San Francisco Glen (925) 862-2026</td>
+                </tr>
+                <tr>
+                  <td>High School</td>
+                  <td>Call School District</td>
+                </tr>
+                <tr>
+                  <td>Middle School</td>
+                  <td>Call School District</td>
+                </tr>
+                <tr>
+                  <td>Elementary School</td>
+                  <td>Call School District</td>
+                </tr>
+                <tr>
+                  <td>Parking Type</td>
+                  <td>Garage - Attached</td>
+                </tr>
+                <tr>
+                  <td>Room Count</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Roof Type</td>
+                  <td>Tile</td>
+                </tr>
+                <tr>
+                  <td>View Type</td>
+                  <td>Mountain</td>
+                </tr>
+                <tr>
+                  <td>Exterior Type</td>
+                  <td>Stucco</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <iframe class="pd-top" width="100%" height="500" width="100%" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%90%C3%A0%20L%E1%BA%A1t+(SmartLandDL)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br />
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="list-prod bg-gray pd-top pd-bottom">
+    <div class="container">
+      <div class="col text-center"><h2>Sản Phẩm Liên Quan</h2>
+        <div class="line-break"></div>
+      </div>
+      <div class="card-group pd-top">
+        <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 prod-item" *ngFor="let number of tmpProdNumber">
+          <!-- Card -->
+          <div class="card">
+            <!--Card image-->
+            <div class="view zoom overlay">
+              <div class="img_overlay">
+                <button class="btn" (click)="openConfirmationDialog()">Xem nhanh</button>
+                <button class="btn" routerLink="">Chi tiết</button>
+              </div>
+              <img class="card-img-top" src="assets/images/prod-{{number}}.png" alt="Card image cap">
+              <a href="#!">
+                  <div class="mask waves-effect waves-light"></div>
+                </a>
+            </div>
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title">Building: 123 on the Park</h4>
+              <strong>$1199.00/mon</strong>
+              <p class="desc">
+                <span>1200 sq fr</span>
+                <span>.</span>
+                <span>4 bedrooms</span>
+                <span>.</span>
+                <span>2 bathrooms</span>
+              </p>
+              <!--Text-->
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+      </div>
+    </div>
+  </section>
+</main>

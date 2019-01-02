@@ -1,0 +1,65 @@
+<header>
+  <!-- <nav *ngIf="!this.logoLeft" id="smartland-nav" class="navbar fixed-top navbar-expand-md navbar-light white double-nav scrolling-navbar" [ngClass]="{'nav-thin': this.isScrolled }">
+    <div class="container">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto" *ngIf="navTree[0] != undefined">
+          <li *ngFor="let leftItem of navTree[0]" class="nav-item" [ngClass]="{'dropdown': leftItem.children != undefined}">
+            <a *ngIf="leftItem.children != undefined" class="nav-link dropdown-toggle" id="navbarDropdown{{leftItem.value.id}}" href="javascript: void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{leftItem.value.title}}</a>
+            <a *ngIf="leftItem.children == undefined" class="nav-link" href="#">{{leftItem.value.title}}</a>
+            <div *ngIf="leftItem.children != undefined" class="dropdown-menu" aria-labelledby="navbarDropdown{{leftItem.value.id}}">
+              <a *ngFor="let leftSubItem of leftItem.children" class="dropdown-item" href="#">{{leftSubItem.value.title}}</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#" (click)="this.logoLeft = !this.logoLeft">
+          <img alt="Brand" src="assets/images/brand_logo2.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto" *ngIf="navTree[1] != undefined">
+          <li *ngFor="let rightItem of navTree[1]" class="nav-item" [ngClass]="{'dropdown': rightItem.children != undefined}">
+            <a *ngIf="rightItem.children != undefined" class="nav-link dropdown-toggle" id="navbarDropdown{{rightItem.value.id}}" href="javascript: void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{rightItem.value.title}}</a>
+            <a *ngIf="rightItem.children == undefined" class="nav-link" href="#">{{rightItem.value.title}}</a>
+            <div *ngIf="rightItem.children != undefined" class="dropdown-menu" aria-labelledby="navbarDropdown{{rightItem.value.id}}">
+              <a *ngFor="let rightSubItem of rightItem.children" class="dropdown-item" href="#">{{rightSubItem.value.title}}</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+
+
+  <nav id="smartland-nav"  class="navbar fixed-top navbar-expand-md navbar-light white" [ngClass]="{'nav-thin': this.isScrolled }">
+    <div class="container">
+    <a class="navbar-brand mx-auto" href="main"><img alt="Brand" src="assets/images/brand_logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-6" aria-controls="navbarSupportedContent-6" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-6">
+      <ul class="navbar-nav ml-auto">
+        <li *ngFor="let leftItem of navTree" class="nav-item" [ngClass]="{'dropdown': leftItem.children != undefined}">
+            <a *ngIf="leftItem.children != undefined" class="nav-link dropdown-toggle" id="navbarDropdown{{leftItem.value.id}}" href="javascript: void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{leftItem.value.title}}</a>
+            <a *ngIf="leftItem.children == undefined" class="nav-link" routerLink="{{this.Change_alias(leftItem.value.title)}}" routerLinkActive="active" >{{leftItem.value.title}}</a>
+            <div *ngIf="leftItem.children != undefined" class="dropdown-menu" aria-labelledby="navbarDropdown{{leftItem.value.id}}">
+              <a *ngFor="let leftSubItem of leftItem.children" class="dropdown-item" href="#">{{leftSubItem.value.title}}</a>
+            </div>
+          </li>
+          <!-- <li *ngFor="let leftItem of navTree[1]" class="nav-item" [ngClass]="{'dropdown': leftItem.children != undefined}">
+            <a *ngIf="leftItem.children != undefined" class="nav-link dropdown-toggle" id="navbarDropdown{{leftItem.value.id}}" href="javascript: void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{leftItem.value.title}}</a>
+            <a *ngIf="leftItem.children == undefined" class="nav-link" href="#">{{leftItem.value.title}}</a>
+            <div *ngIf="leftItem.children != undefined" class="dropdown-menu" aria-labelledby="navbarDropdown{{leftItem.value.id}}">
+              <a *ngFor="let leftSubItem of leftItem.children" class="dropdown-item" href="#">{{leftSubItem.value.title}}</a>
+            </div>
+          </li> -->
+      </ul>
+    </div>
+</div>
+
+  </nav>
+</header>

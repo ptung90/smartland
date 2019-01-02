@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<div *ngIf="this.isAdmin" class="sidenav white-text">
+	<a routerLink="main" title="Trang chủ" routerLinkActive="active-bg"><i class="fas fa-home fa-lg"></i></a>
+	<a routerLink="dashboard" title="Dashboard"  routerLinkActive="active-bg" > <i class="fas fa-chart-pie fa-lg "></i></a>
+ 	<a routerLink="pagesmanage" title="Quản lý trang"  routerLinkActive="active-bg"> <i class="fas fa-th-list fa-lg"></i></a>
+ 	<a routerLink="usersmanage" title="Quản lý nhân viên" routerLinkActive="active-bg"> <i class="fas fa-user-friends fa-lg "></i></a>
+ 	<!-- <a routerLink="tool" title="Thay đổi theme" routerLinkActive="active-bg"> <i class="fas fa-tools fa-lg "></i></a> -->
+</div>
+<div class="main">
+<!-- <app-navbar></app-navbar>
+<div style="height: 80px;"></div>
+<router-outlet></router-outlet>
+<app-footer></app-footer> -->
+<router-outlet></router-outlet>
+</div>
+
+
